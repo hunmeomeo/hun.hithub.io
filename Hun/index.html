@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunthandong</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css"> <!-- Liên kết đến CSS cho mạng lưới -->
+    <link rel="icon" href="mini.png" type="image/png"> <!-- Thêm favicon -->
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Login</h1>
+        <form action="">
+            <div class="input-box">
+                <input type="text" placeholder="Tài khoản" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Nhớ mật khẩu </label>
+                <a href="#forgot-password">Quên mật khẩu?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register-link">
+                <p>Bạn chưa có tài khoản ? <a href="#register">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Form Đăng ký -->
+    <div id="register" class="wrapper hidden">
+        <i class='bx bx-left-arrow-alt back-btn'></i> <!-- Nút quay lại -->
+        <h2>Register</h2>
+        <form action="">
+            <div class="input-box">
+                <input type="text" placeholder="Tên tài khoản" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Nhập mật khẩu" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Nhập lại mật khẩu" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+
+    <!-- Form Quên mật khẩu -->
+    <div id="forgot-password" class="wrapper hidden">
+        <i class='bx bx-left-arrow-alt back-btn'></i> <!-- Nút quay lại -->
+        <h2>Forgot Password</h2>
+        <form action="">
+            <div class="input-box">
+                <input type="text" placeholder="Nhập tài khoản" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <div class="network-grid"></div> <!-- Phần tử để hiển thị mạng lưới -->
+
+    <!-- Thêm các biểu tượng liên kết -->
+    <div class="social-icons">
+        <a href="https://github.com/hunmeomeo" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://www.facebook.com/hunmeomeo" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="https://t.me/hunthandong" target="_blank"><i class='bx bxl-telegram'></i></a>
+        <a href="https://www.youtube.com/@hunthandong" target="_blank"><i class='bx bxl-youtube'></i></a>
+    </div>
+
+    <script src="main.js"></script> <!-- Liên kết đến JavaScript cho mạng lưới -->
+    <script src="form-toggle.js"></script> <!-- Thêm JS điều khiển chuyển đổi form -->
+</body>
+</html>
+
